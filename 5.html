@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box model position</title>
+    <style>
+        .box{
+            height: 200px;
+            width: 200px;
+            text-align: center;
+           
+         
+        }
+        @keyframes grow{
+            100%{transform:scale(2,2);}
+        }
+        #container{
+         display: grid;
+         grid-template-columns: repeat(6,1fr);
+
+         
+        }
+        #box-1{
+            
+              
+            background-color: blue;
+            margin: 5px;
+            padding: 5px;
+            border: 5px solid black;
+        
+
+        }
+          #box-2{
+            background-color: rgb(0, 255, 51);
+            margin: 5px;
+            padding: 5px;
+            border: 5px solid rgb(160, 148, 148);
+
+            
+        }
+          #box-3{
+            background-color: rgb(255, 0, 102);
+            margin: 5px;
+            padding: 5px;
+            border: 5px solid rgb(38, 5, 5);
+            
+        }
+          #box-4{
+            background-color: rgb(19, 190, 44);
+            margin: 5px;
+            padding: 5px;
+            border: 5px solid rgb(38, 5, 5);
+            
+        }
+          #box-5{
+            background-color: rgb(255, 0, 102);
+            margin: 5px;
+            padding: 5px;
+            border: 5px solid rgb(38, 5, 5);
+            
+        }
+           #box-6{
+            background-color: rgb(38, 255, 0);
+            margin: 5px;
+            padding: 5px;
+            border: 5px solid rgb(38, 5, 5);
+            
+        }
+        #box-1:hover{
+            animation: grow 2s infinite;
+            cursor: grab;
+        }
+         #box-2:hover{
+            animation: grow 2s infinite;
+              cursor: grab;
+        }
+         #box-3:hover{
+            animation: grow 2s infinite;
+              cursor: grab;
+        }
+         #box-4:hover{
+            animation: grow 2s infinite;
+              cursor: grab;
+        }
+        
+         #box-5:hover{
+              cursor: grab;
+            animation: grow 2s infinite;
+        }
+        #box-6:hover{
+              cursor: grab;
+            animation: grow 2s infinite;
+        }
+ 
+    </style>
+
+</head>
+<body>
+    <div id="container">
+    <div id="box-1" class="box"> box-1</div>
+     <div id="box-2" class="box"> box-2</div>
+      <div id="box-3" class="box"> box-3</div>
+      <div id="box-4" class="box"> box-4</div>
+      <div id="box-5" class="box"> box-5</div>
+        <div id="box-6" class="box"> box-6</div>
+      </div>
+      <button id="move"> move-next</button>
+    
+</body>
+<!-- <script src="/js.js"></script> -->
+ <script>
+    const button=document.getElementById('move');
+    const box2=document.getElementById('box-2');
+    button.addEventListener('click',()=>{
+        box2.classList.toggle('grow')
+    })
+ </script>
+</html>

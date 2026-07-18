@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>translation</title>
+    <style>
+        #contact{
+            margin: 0px;
+            font-style: italic;
+            border: 2px solid;
+            height: 360px;
+            width: 360px;
+            font-size: 3em;
+            
+            text-align: center;
+            background-color: blue;
+        
+           
+        }
+        #contact:hover{
+            animation-name:grow;
+            animation-duration: 2s;
+          
+            animation-play-state:running;
+            cursor: grab; 
+            
+            
+           
+        }
+        @keyframes slideleft{
+            from{transform: translatex(100%);}
+
+        }
+        @keyframes slideright{
+            to{transform: translatex(100%);}
+        }
+        @keyframes rotatey{
+            100%{ transform: rotatey(180deg);
+            }
+        }
+        @keyframes slidedowny{
+            from{
+                transform: translateY(100%);
+            }
+            to{
+                transform: translateY(0%);
+            }
+
+        }
+        @keyframes slideup{
+            to{transform: translatey(100%);}
+        }
+        @keyframes grow{
+            100%{
+                transform: scale(2,2);
+            }
+        }
+        @keyframes shrink{
+            100%{
+                transform: scale(0.5,0.5);
+            }
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div id="contact">
+         <h2>Adarsha</h2>
+    </div>
+</body>
+</html>

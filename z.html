@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="z.css">
+    
+</head>
+<body>
+    
+    <div id="box1"  >box-1</div>
+
+
+<div id="box2">box-2</div>
+<form action="name">
+    <label for="names">name</label>
+    <input type="text" id="names" placeholder="enter a name"><br><br>
+    <label for="age">age</label>
+    <input type="number" id="age" placeholder="enter your age" min="1"><br><br>
+    <label for="mail">e-mail</label>
+    <input type="email" id="mail" placeholder="enyer your e-mail"><br><br>
+      <p>
+        <label id="ho" >hobbies</label><br>
+        <input id="cr" type="radio"name='hobbies' value="cricket"> cricket <br>
+      <input id="ka" type="radio" name='hobbies'value="kabaddi">kabaddi <br>
+        <input id="vo" type="radio" value="vollybal" name='hobbies'>vollybal <br>
+       
+        
+       </p>
+    <button type="button" id="submit" onclick="showdetail()">submit</button><br><br>
+    <button type="reset" id="reset" >Reset</button>
+    <h1 id="result">Result:</h1>
+</form>
+
+<span id="aname">
+    <h1 >Adarsha</h1>
+</span>
+
+   
+</body>
+<script>
+    function showdetail(){
+        let name=document.getElementById("names").value;
+        let age=document.getElementById("age").value;
+        let mail=document.getElementById("mail").value;
+        let result=document.getElementById("result").textContent=`your name:${name} and age: ${age} and e-mail :${mail}`
+        
+
+    }
+</script>
+
+
+</html>

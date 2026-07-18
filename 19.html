@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        h3::first-letter{
+            font-size: 2em;
+            font-style: oblique;
+            animation:colourchange 2s infinite ;
+            cursor: pointer;
+        }
+        p::first-line{
+            color: green;
+        }
+        p::selection{
+            background-color: purple;
+        }
+        #animation:hover{
+            animation: colourchange 2s ;
+            cursor: pointer;
+
+        }
+          h3{
+            animation:colourchange 2s  ;
+            cursor: pointer;
+
+        }
+      
+        @keyframes colourchange{
+            0%{
+                background-color: blue;
+
+            }
+            30%{
+                background-color: brown;
+            }
+            45%{background-color: orange;}
+            60%{background-color: purple;}
+            90%{background-color: yellowgreen;}
+            100%{background-color: yellow;}
+        }
+
+    </style>
+</head>
+<body>
+    
+    <h3>Hello welcome to animation</h3>
+    <div id="animation"><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, maxime. Ab nisi unde iste incidunt quos dolor, magni consequuntur. Corporis, assumenda. Laborum explicabo neque obcaecati fugiat eius atque totam? Voluptas!</p></div>
+    
+</body>
+</html>

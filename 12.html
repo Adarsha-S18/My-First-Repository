@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>style</title>
+    <style>
+        h1::first-letter{
+            font-size: 2em;
+            font-style: italic;
+            color: yellow;
+        }
+        p::first-line{
+            background-color: purple;
+
+        }
+        p::selection{
+            color: green;
+            background-color: black;
+
+        }
+       
+          #fruit li::marker{
+            content:'👍';
+            color: blue;
+
+        }
+        #apple::after{
+            content:'🍎' ;
+
+        }
+        #banana::after{
+            content: '🍌';
+        }
+        #orange::after{
+            content: '🍊';
+        }
+    </style>
+</head>
+<body>
+    <h1>Introduction to virat</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum illum autem quidem iste reprehenderit dolore delectus. Corporis porro laboriosam magnam. Cum numquam deleniti quae. Alias fugit autem rerum perspiciatis sed?</p>
+    <ul id="fruit">
+        <li id="apple">apple</li>
+        <li id="banana">banana</li>
+        <li id="orange">orange</li>
+    </ul>
+</body>
+</html>

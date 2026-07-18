@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        h1{
+            text-align: center;
+            text-transform: capitalize;
+            overflow: auto;
+            color:greenyellow;
+            text-shadow: 2px 2px 3px rebeccapurple,2px 2px 3px rebeccapurple;
+           
+                }
+        
+        #name{
+            animation:fade  infinite steps(2);
+            animation-duration: 2sstop ;
+            animation-timing-function: ease-in;
+            color: blueviolet;
+       
+            
+        }
+        #img1{
+            
+            animation: rotatex ,slideleft, fade infinite 2s stop ;
+        }
+        @keyframes fade{
+            50%{opacity: 0;}
+        }
+        @keyframes slideleft{
+            from{transform: translate(100%);}
+        }
+        @keyframes rotatex{
+            100%{transform: rotatex(360deg);}
+        }
+    </style>
+
+</head>
+<body>
+    <div id="name">  <h1>ADARSHA</h1></div>
+    <div id="img1"> <span><img src="/image/ada.jpg" width="50%" height="50%"  alt=""> </span></div>
+  
+    
+</body>
+</html>

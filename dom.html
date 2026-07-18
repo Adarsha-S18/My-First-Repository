@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+    <style>
+       #fruits{
+        border: 2px solid;
+        font-size: 2em;
+       }
+    </style>
+</head>
+<body>
+    <span>
+        <ul id="fruits">
+       <li id="apple">apple</li>
+       <li id="banana">banana</li>
+       <li id="orange">orange</li>
+    </ul>
+    </span>
+ 
+
+
+    <ul id="fruit">
+        <li >banana</li>
+        <li>orange</li>
+    </ul>
+    <ul id="veg">
+        <li>carrot</li>
+        <li>betroat</li>
+    </ul>
+    <ul id="cinima">
+        <li>kgf</li>
+        <li>modalasala</li>
+    </ul>
+    <script>
+        const ufruit=document.querySelectorAll('ul');
+        ufruit.forEach(ufruit=>{
+            const lchild=ufruit.firstElementChild;
+            lchild.style.backgroundColor=''
+
+        })
+        const newlist=document.createElement('list');
+        newlist.textContent='cocounut';
+        newlist.style.backgroundColor='green'
+        newlist.style.fontSize='2em'
+        document.body.append(newlist);
+        document.getElementById('fruits').insertBefore(newlist,apple)
+        document.getElementById('fruits').removeChild(newlist)
+       
+     
+    </script>
+</body>
+</html>

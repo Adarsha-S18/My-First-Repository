@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java script</title>
+    <style>
+        #countl{
+            font-size: 10em;
+            text-align: center;
+            display: block;
+            font-family: Arial, Helvetica, sans-serif;
+            animation: colourchange 2s infinite stop;
+        }
+        .btn{
+            text-align: center;
+            padding: 10px 20px;
+            color: blue;
+            font-size: 2.5em;
+            transition: background-colour 0.25s;
+            animation: colourchange 2s   ;
+        }
+        .btn:hover{
+            background-color: yellow;
+            color: purple;
+            cursor: pointer;
+           
+        }
+        @keyframes colourchange{
+            0%{background-color: blue;}
+            30%{background-color:yellowgreen;}
+            60%{background-color:red;}
+            80%{background-color:greenyellow;}
+            100%{background-color:orchid;}
+        }
+
+      
+    </style>
+   
+</head>
+<body>
+    <label id="countl" >0</label><br>
+    <button id="btndec" class="btn">decrease</button>
+    <button id="btnres"class="btn">reset</button>
+    <button id="btninc"class="btn">increase</button><br><br><br><br>
+
+    <label >enter your age:</label><br>
+    <input type="text" id="text"><br>
+    <button type="submit" id="submit">submit</button>
+    <p id="myp"></p>
+   
+    <!-- <script src="j.js"></script> -->
+     <input type="checkbox" id="check">
+     <label for="check">subscribe</label><br><br><br>
+     <input type="radio" name="box" id="visa">
+     <label for="visa">visa pay</label><br>
+     <input type="radio" name="box" id="phone">
+     <label for="phone">phone pay</label><br>
+     <input type="radio" name="box" id="cash">
+     <label for="cash">cash pay</label><br>
+     <button type="submit" id="mysub">submit</button>
+     <p id="mysubr"></p>
+     <p id="mypayr"></p>
+
+    <script src="a.js"></script>
+     <p id="game"></p>
+    <!-- <script src="java.js"></script> -->
+     <!-- <script src="btn.js"></script> -->
+
+
+    
+
+    
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>work-star</title>
+</head>
+<script>
+   function rate(num){
+      let stars=document.querySelectorAll(".star");
+      stars.forEach((star,index)=>{
+         
+         if(index<num){
+            star.classList.add("a");
+
+         }
+         else{
+            star.classList.remove("a");
+         }
+      });
+      let text='';
+      if(num==1 ||num==2){text="bad"}
+      else if(num==3){text="good"}
+      else if(num==4||num==5){text="very good"}
+      document.getElementById("result").textContent="rating :"+text;
+   }
+
+</script>
+<body>
+<h1>Star-Rating-Project</h1>   
+<div id="stars">
+ <span class="star" onclick="rate(1)">⭐</span>
+<span class="star" onclick="rate(2)">⭐</span>
+<span class="star" onclick="rate(3)">⭐</span>
+<span class="star" onclick="rate(4)">⭐</span>
+<span class="star" onclick="rate(5)">⭐</span>
+ </div>
+ <div id="result"></div>
+</body>
+<style>
+   body{
+      margin: 0px;
+   }
+   h1{
+      font-weight: bold;
+      font-size: 3em;
+      color: palevioletred;
+   }
+   #stars:hover{
+      color: purple;
+   }
+   .star:hover{
+      cursor: pointer;
+      color: rgb(128, 128, 128);
+      gap: 2px;
+      align-items: center;
+   }
+   #result{
+      color: red;
+      font-size: 2em;
+   }
+</style>
+</html>
